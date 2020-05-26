@@ -1,6 +1,16 @@
 var btn = document.querySelector("button").addEventListener("click", conversor);
-var valorInput = document.querySelector("#binario");
 
+var valorInput = document.querySelector("#binario")
+
+valorInput.addEventListener("input", function (){
+
+ if (valorInput.value == 0 ||  valorInput.value == 1){
+   console.log("valor correto")
+ }
+ else{
+    console.log("valor errado")
+ }
+});
 
 function conversor(){
 
@@ -10,10 +20,4 @@ function conversor(){
 
 }
 
-function verificador(){
 
-
-   
-
-
-}
